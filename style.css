@@ -1,4 +1,30 @@
 h1 {
-  color: rgb(37, 247, 9); /* đổi màu chữ */
-  text-align: center; /* căn giữa */
+  color: #f40c0c;
+  opacity: 1000%;
+
+  opacity:;
+}
+a {
+  color: rgb(38, 0, 255);
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(https://cdn-media.sforum.vn/storage/app/media/ctvseo_maihue/hinh-nen-1920-1080/hinh-nen-1920-1080-thumbnail.jpg);
+}
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("bg.jpg") center/cover no-repeat;
+  opacity: 0.5;
+  z-index: -1;
 }
