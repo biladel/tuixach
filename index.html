@@ -3,40 +3,405 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hân anh shop túi</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>HAGOO – Holiday Reset</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="b.css" />
   </head>
-
   <body>
-    <header class="header">
-      <div class="logo">
-        <h2>HAGOO</h2>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">HI</span>
+        <span class="logo-name">HAGOO</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Về Hagoo</a></li>
+        <li class="has-arrow"><a href="#">Bộ Sưu Tập</a></li>
+        <li class="has-arrow"><a href="#">Tất Cả Sản Phẩm</a></li>
+        <li><a href="#">Ưu Đãi Độc Quyền</a></li>
+        <li><a href="#">Sản Phẩm Mới</a></li>
+        <li><a href="#">Tin Tức</a></li>
+        <li><a href="#">Tuyển Dụng</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search">
+          <input type="text" placeholder="Tìm kiếm" />
+          <button>🔍</button>
+        </div>
+        <span class="nav-flag">🇻🇳</span>
+        <span class="nav-lang">VI</span>
+        <a href="#" class="nav-icon">👤</a>
+        <a href="#" class="nav-icon">
+          🛍
+          <span class="cart-count">0</span>
+        </a>
       </div>
+    </nav>
 
-      <nav class="nav">
-        <a href="#">VỀ HAGOO</a>
-        <a href="#">BỘ SƯU TẬP</a>
-        <a href="#">TẤT CẢ SẢN PHẨM</a>
-        <a href="#">ƯU ĐÃI ĐỘC QUYỀN</a>
-        <a href="#">SẢN PHẨM MỚI</a>
-        <a href="#">TIN TỨC</a>
-        <a href="#">TUYỂN DỤNG</a>
-      </nav>
-
-      <div class="right">
-        <input type="text" placeholder="Tìm kiếm" />
-        <span class="icon">🔍</span>
-        <span class="icon">👤</span>
-        <span class="icon">🛒</span>
-      </div>
-    </header>
-
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-text">
-        <h1>HAPPY VIETNAMESE WOMEN’S DAY</h1>
-        <p>Modern Motherhood - khi tình yêu của người phụ nữ...</p>
-        <span>HAGOO</span>
+      <div class="hero-bg"></div>
+      <div class="hero-img-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-brand">Hagoo</p>
+        <h1 class="hero-title">Holiday<br />Reset</h1>
+        <p class="hero-sub">
+          So when she returns to the city and her routine,<br />
+          the HAGOO woman holds onto that quiet sense of balance — in her own
+          way.
+        </p>
+        <a href="#" class="hero-cta">Khám Phá Ngay</a>
       </div>
     </section>
+
+    <!-- BEST SELLERS -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Sản Phẩm Bán Chạy</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img">
+            <div class="product-img-inner">
+              <svg viewBox="0 0 60 60" fill="none">
+                <path
+                  d="M20 10 Q30 5 40 10 L44 50 H16 Z"
+                  fill="rgba(0,0,0,0.2)"
+                />
+              </svg>
+            </div>
+            <span class="product-tag new">Mới</span>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Đầm Corset Denim Luxury</p>
+            <div class="product-price">
+              <span class="current">4.850.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #c8bfb8, #a09088)"
+            >
+              <svg viewBox="0 0 60 60" fill="none">
+                <rect
+                  x="18"
+                  y="8"
+                  width="24"
+                  height="44"
+                  rx="2"
+                  fill="rgba(0,0,0,0.15)"
+                />
+              </svg>
+            </div>
+            <span class="product-tag sale">Sale</span>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Áo Blazer Oversized Premium</p>
+            <div class="product-price">
+              <span class="sale-price">3.200.000₫</span>
+              <span class="original">4.500.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #ddd0c0, #c0a888)"
+            >
+              <svg viewBox="0 0 60 60" fill="none">
+                <ellipse
+                  cx="30"
+                  cy="30"
+                  rx="16"
+                  ry="22"
+                  fill="rgba(0,0,0,0.15)"
+                />
+              </svg>
+            </div>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Chân Váy Midi Linen</p>
+            <div class="product-price">
+              <span class="current">2.650.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #1c1c2e, #2e2e4a)"
+            >
+              <svg viewBox="0 0 60 60" fill="none">
+                <path
+                  d="M15 12 H45 L42 48 H18 Z"
+                  fill="rgba(255,255,255,0.1)"
+                />
+              </svg>
+            </div>
+            <span class="product-tag new">Mới</span>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Quần Palazzo Wide Leg</p>
+            <div class="product-price">
+              <span class="current">3.100.000₫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO STRIP -->
+    <div class="promo-strip">
+      <div class="promo-item">
+        <div class="promo-icon">🚚</div>
+        <div class="promo-title">Miễn Phí Giao Hàng</div>
+        <div class="promo-sub">Đơn hàng từ 2.000.000₫</div>
+      </div>
+      <div class="promo-item">
+        <div class="promo-icon">↩️</div>
+        <div class="promo-title">Đổi Trả 30 Ngày</div>
+        <div class="promo-sub">Hỗ trợ đổi trả dễ dàng</div>
+      </div>
+      <div class="promo-item">
+        <div class="promo-icon">✂️</div>
+        <div class="promo-title">May Đo Riêng</div>
+        <div class="promo-sub">Điều chỉnh theo số đo cá nhân</div>
+      </div>
+      <div class="promo-item">
+        <div class="promo-icon">🎁</div>
+        <div class="promo-title">Gói Quà Miễn Phí</div>
+        <div class="promo-sub">Cho mọi đơn hàng</div>
+      </div>
+    </div>
+
+    <!-- COLLECTION BANNERS -->
+    <section class="collection-section-header">
+      <div class="section-header">
+        <h2 class="section-title">Bộ Sưu Tập</h2>
+        <div class="section-line"></div>
+      </div>
+    </section>
+    <div class="collection-banner">
+      <div class="banner-card">
+        <div class="banner-bg banner-bg-1"></div>
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <p class="banner-eyebrow">SS 2025</p>
+          <h3 class="banner-title">Nocturne<br />Collection</h3>
+          <a href="#" class="banner-btn">Xem Bộ Sưu Tập</a>
+        </div>
+      </div>
+      <div class="banner-card">
+        <div class="banner-bg banner-bg-2"></div>
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <p class="banner-eyebrow">Độc Quyền</p>
+          <h3 class="banner-title">Terracotta<br />Edit</h3>
+          <a href="#" class="banner-btn">Khám Phá</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Sản Phẩm Mới</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #e8ddd0, #d0c0a8)"
+            ></div>
+            <span class="product-tag new">Mới</span>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Áo Tay Bồng Lụa Ivory</p>
+            <div class="product-price">
+              <span class="current">2.450.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #2a3a2a, #3a4e3a)"
+            ></div>
+            <span class="product-tag new">Mới</span>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Đầm Wrap Xanh Rừng</p>
+            <div class="product-price">
+              <span class="current">3.750.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #f0e0d0, #e0c8b0)"
+            ></div>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Set Áo + Quần Linen</p>
+            <div class="product-price">
+              <span class="current">5.200.000₫</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div
+              class="product-img-inner"
+              style="background: linear-gradient(160deg, #3a2a2a, #5a3a3a)"
+            ></div>
+            <span class="product-tag sale">-20%</span>
+            <button class="product-wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Áo Khoác Trench Burgundy</p>
+            <div class="product-price">
+              <span class="sale-price">5.600.000₫</span>
+              <span class="original">7.000.000₫</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section section-cream">
+      <div class="section-header">
+        <h2 class="section-title">Tin Tức</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-img"><div class="news-img-inner"></div></div>
+          <p class="news-date">05 Tháng 5, 2025</p>
+          <h3 class="news-title">
+            Holiday Reset: Khi Thời Trang Gặp Thiên Nhiên
+          </h3>
+          <p class="news-excerpt">
+            Bộ sưu tập mới của HAGOO lấy cảm hứng từ những chuyến hành trình xa
+            xôi, nơi sự tự do và thanh lịch hòa quyện cùng nhau.
+          </p>
+        </div>
+
+        <div class="news-card">
+          <div class="news-img">
+            <div
+              class="news-img-inner"
+              style="background: linear-gradient(160deg, #c0c8b8, #9aaa90)"
+            ></div>
+          </div>
+          <p class="news-date">28 Tháng 4, 2025</p>
+          <h3 class="news-title">Hướng Dẫn Phối Đồ Mùa Hè 2025</h3>
+          <p class="news-excerpt">
+            Khám phá cách tạo nên những bộ trang phục thanh lịch, phù hợp từ văn
+            phòng đến những buổi tối tiệc tùng nhẹ nhàng.
+          </p>
+        </div>
+
+        <div class="news-card">
+          <div class="news-img">
+            <div
+              class="news-img-inner"
+              style="background: linear-gradient(160deg, #d0c0c8, #b0909a)"
+            ></div>
+          </div>
+          <p class="news-date">15 Tháng 4, 2025</p>
+          <h3 class="news-title">HAGOO Khai Trương Showroom Mới Tại Hà Nội</h3>
+          <p class="news-excerpt">
+            Không gian mua sắm mới tại trung tâm Hà Nội mang đến trải nghiệm
+            thời trang cao cấp, được thiết kế tỉ mỉ đến từng chi tiết.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">HAGOO</div>
+          <p class="footer-desc">
+            Thương hiệu thời trang cao cấp Việt Nam, tôn vinh vẻ đẹp của người
+            phụ nữ hiện đại với những thiết kế tinh tế và chất liệu thượng hạng.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link">f</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">ig</a>
+            <a href="#" class="social-link">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Về Hagoo</h4>
+          <ul>
+            <li><a href="#">Câu Chuyện Thương Hiệu</a></li>
+            <li><a href="#">Nhà Thiết Kế</a></li>
+            <li><a href="#">Tính Bền Vững</a></li>
+            <li><a href="#">Tuyển Dụng</a></li>
+            <li><a href="#">Báo Chí</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hỗ Trợ</h4>
+          <ul>
+            <li><a href="#">Hướng Dẫn Size</a></li>
+            <li><a href="#">Chính Sách Đổi Trả</a></li>
+            <li><a href="#">Giao Hàng &amp; Vận Chuyển</a></li>
+            <li><a href="#">Chăm Sóc Sản Phẩm</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nhận Tin Mới</h4>
+          <p class="footer-newsletter-desc">
+            Đăng ký nhận thông tin về bộ sưu tập mới và ưu đãi độc quyền.
+          </p>
+          <div class="footer-newsletter-form">
+            <input type="email" placeholder="Email của bạn" />
+            <button>→</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 HAGOO. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Chính Sách Bảo Mật</a>
+          <a href="#">Điều Khoản Sử Dụng</a>
+          <a href="#">Cookie</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
