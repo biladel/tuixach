@@ -3,63 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAGOO - Thời Trang Nữ</title>
+    <title>HAGOO — Thời Trang Nữ</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- ===== DESKTOP NAV ===== -->
-    <nav class="nav-desktop">
-      <a href="#" class="nav-logo">
+    <!-- ================================================
+       MOBILE NAVIGATION (visible < 900px)
+       ================================================ -->
+    <nav class="nav-mobile">
+      <a href="#" class="mobile-logo">
         <span class="logo-icon">H|H</span>
         <span class="logo-text">HAGOO</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#">Về Hagoo</a></li>
-        <li><a href="#">Bộ Sưu Tập ▾</a></li>
-        <li><a href="#">Tất Cả Sản Phẩm ▾</a></li>
-        <li><a href="#">Ưu Đãi Độc Quyền</a></li>
-        <li><a href="#">Sản Phẩm Mới</a></li>
-        <li><a href="#">Tin Tức</a></li>
-        <li><a href="#">Tuyển Dụng</a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="search-bar">
+
+      <div class="mobile-search">
+        <svg
+          width="13"
+          height="13"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <input type="text" placeholder="Tìm kiếm" />
+      </div>
+
+      <div class="mobile-nav-right">
+        <span class="lang-tag">🇻🇳 VI</span>
+        <a href="#" class="nav-icon-btn">
           <svg
-            width="12"
-            height="12"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-          </svg>
-          <input type="text" placeholder="Tìm kiếm" />
-        </div>
-        <button class="lang-btn">🇻🇳 VI</button>
-        <button class="nav-icon">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-        </button>
-        <button class="nav-icon">
-          <svg
-            width="18"
-            height="18"
+            width="22"
+            height="22"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -70,33 +47,62 @@
             <path d="M16 10a4 4 0 0 1-8 0" />
           </svg>
           <span class="cart-badge">0</span>
-        </button>
+        </a>
       </div>
     </nav>
 
-    <!-- ===== MOBILE NAV ===== -->
-    <nav class="nav-mobile">
-      <a href="#" class="mobile-logo">
+    <!-- ================================================
+       DESKTOP NAVIGATION (visible ≥ 900px)
+       ================================================ -->
+    <nav class="nav-desktop">
+      <a href="#" class="desktop-logo">
         <span class="logo-icon">H|H</span>
         <span class="logo-text">HAGOO</span>
       </a>
-      <div class="mobile-search">
-        <svg
-          width="12"
-          height="12"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#aaa"
-          stroke-width="2"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.35-4.35" />
-        </svg>
-        <input type="text" placeholder="Tìm kiếm" />
-      </div>
-      <div class="mobile-nav-actions">
-        <span style="font-size: 10px; letter-spacing: 1px">🇻🇳 VI</span>
-        <button class="nav-icon" style="position: relative">
+
+      <ul class="nav-links">
+        <li><a href="#">Về Hagoo</a></li>
+        <li><a href="#">Bộ Sưu Tập ▾</a></li>
+        <li><a href="#">Tất Cả Sản Phẩm ▾</a></li>
+        <li><a href="#">Ưu Đãi Độc Quyền</a></li>
+        <li><a href="#">Sản Phẩm Mới</a></li>
+        <li><a href="#">Tin Tức</a></li>
+        <li><a href="#">Tuyển Dụng</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="desktop-search">
+          <input type="text" placeholder="Tìm kiếm" />
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+        </div>
+
+        <span class="lang-tag">🇻🇳 VI</span>
+
+        <a href="#" class="nav-icon-btn">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </a>
+
+        <a href="#" class="nav-icon-btn">
           <svg
             width="20"
             height="20"
@@ -110,67 +116,46 @@
             <path d="M16 10a4 4 0 0 1-8 0" />
           </svg>
           <span class="cart-badge">0</span>
-        </button>
+        </a>
       </div>
     </nav>
 
-    <!-- ===== HERO BANNER ===== -->
-    <section class="hero-banner">
-      <!-- Placeholder hero with CSS gradient -->
-      <div
-        style="
-          width: 100%;
-          height: 200px;
-          background: linear-gradient(
-            135deg,
-            #d4ccbf 0%,
-            #c5b5a5 40%,
-            #e8e0d5 100%
-          );
-          position: relative;
-          overflow: hidden;
-        "
-      >
-        <!-- Decorative stripes suggestion -->
-        <div
-          style="
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 55%;
-            background: repeating-linear-gradient(
-              90deg,
-              rgba(255, 255, 255, 0.15) 0,
-              rgba(255, 255, 255, 0.15) 10px,
-              transparent 10px,
-              transparent 30px
-            );
-          "
-        ></div>
-      </div>
+    <!-- ================================================
+       HERO BANNER
+       Thay src="..." bằng đường dẫn ảnh thực tế của bạn
+       ================================================ -->
+    <section class="hero">
+      <!--
+      Nếu có ảnh thật, xóa div.hero-placeholder và dùng thẻ img:
+      <img class="hero-img" src="images/banner.jpg" alt="HAGOO City Layers">
+    -->
+      <div class="hero-placeholder"></div>
+
       <div class="hero-overlay">
-        <div class="hero-text">
-          <div class="brand-sub">Hagoo</div>
-          <div class="brand-title">CITY<br />LAYERS</div>
-          <div class="brand-desc">
-            Without seeking attention, City Layers embraces a beauty that is
-            carefully refined, composed, contemporary, and effortless
-            accompanying the modern woman.
-          </div>
-        </div>
+        <span class="hero-brand">HAGOO</span>
+        <h1 class="hero-title">TIMELESS<br />COURAGE</h1>
+        <span class="hero-sub">Mini Collection 2025</span>
       </div>
     </section>
 
-    <!-- ===== SẢN PHẨM BÁN CHẠY ===== -->
+    <!-- ================================================
+       SẢN PHẨM BÁN CHẠY
+       ================================================ -->
     <section>
       <div class="section-title fade-up">
         <h2>Sản Phẩm Bán Chạy</h2>
       </div>
 
       <div class="carousel-wrap">
-        <button class="carousel-arrow left" onclick="scrollCarousel(-1)">
+        <!-- Left arrow (desktop only) -->
+        <button
+          class="carousel-arrow left"
+          onclick="scrollCarousel('banchay', -1)"
+          aria-label="Trước"
+        >
           <svg
+            width="14"
+            height="14"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -179,59 +164,15 @@
             <polyline points="15 18 9 12 15 6" />
           </svg>
         </button>
-        <div class="products-scroll" id="banchay-carousel">
-          <!-- Product 1 -->
+
+        <div class="products-scroll" id="banchay">
+          <!-- ── Card 1 ── -->
           <div class="product-card">
-            <div class="product-img-wrap" style="background: #c4b4aa">
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  overflow: hidden;
-                "
-              >
-                <svg
-                  width="80"
-                  height="140"
-                  viewBox="0 0 80 140"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <!-- Simple fashion silhouette -->
-                  <ellipse
-                    cx="40"
-                    cy="20"
-                    rx="12"
-                    ry="14"
-                    fill="rgba(255,255,255,0.2)"
-                  />
-                  <path
-                    d="M20 40 Q30 35 40 36 Q50 35 60 40 L65 110 L15 110 Z"
-                    fill="#8b1a1a"
-                    opacity="0.7"
-                  />
-                  <path
-                    d="M20 40 Q10 50 8 70 L18 72 Q22 55 28 48 Z"
-                    fill="#8b1a1a"
-                    opacity="0.65"
-                  />
-                  <path
-                    d="M60 40 Q70 50 72 70 L62 72 Q58 55 52 48 Z"
-                    fill="#8b1a1a"
-                    opacity="0.65"
-                  />
-                  <rect
-                    x="30"
-                    y="108"
-                    width="20"
-                    height="25"
-                    fill="rgba(255,255,255,0.4)"
-                  />
-                </svg>
-              </div>
+            <div class="product-img-wrap">
+              <!--
+              Thay bằng:
+              <img src="images/sp1.jpg" alt="Áo khoác kaki ngắn đai eo">
+            -->
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
@@ -240,38 +181,9 @@
             </div>
           </div>
 
-          <!-- Product 2 -->
+          <!-- ── Card 2 ── -->
           <div class="product-card">
             <div class="product-img-wrap" style="background: #d4c9bc">
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                  <ellipse
-                    cx="40"
-                    cy="20"
-                    rx="12"
-                    ry="14"
-                    fill="rgba(255,255,255,0.2)"
-                  />
-                  <path
-                    d="M25 38 Q37 34 40 35 Q43 34 55 38 L52 80 L28 80 Z"
-                    fill="#6b5a4e"
-                    opacity="0.75"
-                  />
-                  <path
-                    d="M28 80 Q32 140 40 138 Q48 140 52 80 Z"
-                    fill="#b8a88a"
-                    opacity="0.8"
-                  />
-                </svg>
-              </div>
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
@@ -280,51 +192,9 @@
             </div>
           </div>
 
-          <!-- Product 3 -->
+          <!-- ── Card 3 ── -->
           <div class="product-card">
             <div class="product-img-wrap" style="background: #c0b0a5">
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                  <ellipse
-                    cx="40"
-                    cy="18"
-                    rx="11"
-                    ry="13"
-                    fill="rgba(255,255,255,0.2)"
-                  />
-                  <path
-                    d="M22 36 Q35 31 40 32 Q45 31 58 36 L60 90 L20 90 Z"
-                    fill="#6b1515"
-                    opacity="0.75"
-                  />
-                  <path
-                    d="M22 36 Q12 44 10 65 L19 67 Q22 50 28 44 Z"
-                    fill="#6b1515"
-                    opacity="0.7"
-                  />
-                  <path
-                    d="M58 36 Q68 44 70 65 L61 67 Q58 50 52 44 Z"
-                    fill="#6b1515"
-                    opacity="0.7"
-                  />
-                  <rect
-                    x="28"
-                    y="88"
-                    width="24"
-                    height="40"
-                    rx="2"
-                    fill="rgba(100,100,100,0.3)"
-                  />
-                </svg>
-              </div>
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
@@ -333,51 +203,9 @@
             </div>
           </div>
 
-          <!-- Product 4 -->
+          <!-- ── Card 4 ── -->
           <div class="product-card">
             <div class="product-img-wrap" style="background: #c8bdb2">
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                  <ellipse
-                    cx="40"
-                    cy="18"
-                    rx="11"
-                    ry="13"
-                    fill="rgba(255,255,255,0.2)"
-                  />
-                  <path
-                    d="M24 34 Q35 30 40 31 Q45 30 56 34 L54 70 L26 70 Z"
-                    fill="#7a5c3a"
-                    opacity="0.7"
-                  />
-                  <path
-                    d="M24 34 Q14 42 12 58 L20 60 Q23 48 28 42 Z"
-                    fill="#7a5c3a"
-                    opacity="0.65"
-                  />
-                  <path
-                    d="M56 34 Q66 42 68 58 L60 60 Q57 48 52 42 Z"
-                    fill="#7a5c3a"
-                    opacity="0.65"
-                  />
-                  <rect
-                    x="26"
-                    y="68"
-                    width="28"
-                    height="60"
-                    rx="3"
-                    fill="rgba(255,255,255,0.45)"
-                  />
-                </svg>
-              </div>
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
@@ -386,69 +214,28 @@
             </div>
           </div>
 
-          <!-- Product 5 -->
+          <!-- ── Card 5 ── -->
           <div class="product-card">
             <div class="product-img-wrap" style="background: #cfc5ba">
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                  <ellipse
-                    cx="40"
-                    cy="18"
-                    rx="11"
-                    ry="13"
-                    fill="rgba(255,255,255,0.2)"
-                  />
-                  <path
-                    d="M22 34 Q34 30 40 31 Q46 30 58 34 L60 85 L20 85 Z"
-                    fill="#c8a882"
-                    opacity="0.8"
-                  />
-                  <path
-                    d="M22 34 Q12 42 10 60 L19 62 Q22 50 28 43 Z"
-                    fill="#c8a882"
-                    opacity="0.75"
-                  />
-                  <path
-                    d="M58 34 Q68 42 70 60 L61 62 Q58 50 52 43 Z"
-                    fill="#c8a882"
-                    opacity="0.75"
-                  />
-                  <rect
-                    x="24"
-                    y="83"
-                    width="14"
-                    height="50"
-                    rx="2"
-                    fill="rgba(30,40,70,0.5)"
-                  />
-                  <rect
-                    x="42"
-                    y="83"
-                    width="14"
-                    height="50"
-                    rx="2"
-                    fill="rgba(30,40,70,0.5)"
-                  />
-                </svg>
-              </div>
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
-              <div class="name">Quần denim 2 ly diều chỉ...</div>
+              <div class="name">Quần denim 2 ly điều chỉnh...</div>
               <div class="price">680.000 đ</div>
             </div>
           </div>
         </div>
-        <button class="carousel-arrow right" onclick="scrollCarousel(1)">
+        <!-- /products-scroll -->
+
+        <!-- Right arrow (desktop only) -->
+        <button
+          class="carousel-arrow right"
+          onclick="scrollCarousel('banchay', 1)"
+          aria-label="Tiếp"
+        >
           <svg
+            width="14"
+            height="14"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -458,66 +245,58 @@
           </svg>
         </button>
       </div>
+      <!-- /carousel-wrap -->
     </section>
 
-    <!-- ===== MUA GÌ HÔM NAY ===== -->
+    <!-- ================================================
+       MUA GÌ HÔM NAY — TABS + GRID
+       ================================================ -->
     <section class="cat-tabs-section">
       <div class="section-title fade-up">
         <h2>Mua Gì Hôm Nay?</h2>
       </div>
 
-      <div class="cat-tabs">
-        <button class="cat-tab active" onclick="filterCat(this, 'all')">
+      <!-- Category filter tabs -->
+      <div class="cat-tabs" role="tablist">
+        <button
+          class="cat-tab active"
+          role="tab"
+          onclick="filterCat(this, 'all')"
+        >
           Tất cả
         </button>
-        <button class="cat-tab" onclick="filterCat(this, 'bst')">BST</button>
-        <button class="cat-tab" onclick="filterCat(this, 'ao')">Áo</button>
-        <button class="cat-tab" onclick="filterCat(this, 'blazer')">
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'bst')">
+          BST
+        </button>
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'ao')">
+          Áo
+        </button>
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'blazer')">
           Blazer
         </button>
-        <button class="cat-tab" onclick="filterCat(this, 'vay')">Váy</button>
-        <button class="cat-tab" onclick="filterCat(this, 'chanvay')">
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'vay')">
+          Váy
+        </button>
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'chanvay')">
           Chân váy
         </button>
-        <button class="cat-tab" onclick="filterCat(this, 'quan')">Quần</button>
-        <button class="cat-tab" onclick="filterCat(this, 'bo')">Bộ</button>
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'quan')">
+          Quần
+        </button>
+        <button class="cat-tab" role="tab" onclick="filterCat(this, 'bo')">
+          Bộ
+        </button>
       </div>
 
-      <div class="products-grid-2" id="main-grid">
-        <!-- 10 product cards -->
+      <!-- Products grid -->
+      <div class="products-grid" id="main-grid">
+        <!-- ── Grid Card 1 ── -->
         <div class="product-card" data-cat="ao">
           <div class="product-img-wrap" style="background: #b8c8c0">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M22 34 Q35 30 40 31 Q45 30 58 34 L60 90 L20 90 Z"
-                  fill="rgba(100,150,180,0.6)"
-                />
-                <path
-                  d="M22 34 Q12 44 10 65 L19 67 Q22 50 28 44 Z"
-                  fill="rgba(100,150,180,0.55)"
-                />
-                <path
-                  d="M58 34 Q68 44 70 65 L61 67 Q58 50 52 44 Z"
-                  fill="rgba(100,150,180,0.55)"
-                />
-              </svg>
-            </div>
+            <!--
+            Thay bằng:
+            <img src="images/sp6.jpg" alt="Áo sơ mi lụa">
+          -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -526,43 +305,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 2 ── -->
         <div class="product-card" data-cat="blazer">
           <div class="product-img-wrap" style="background: #d4c8b8">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M22 34 Q35 30 40 31 Q45 30 58 34 L62 95 L18 95 Z"
-                  fill="rgba(200,170,120,0.7)"
-                />
-                <path
-                  d="M40 31 L38 95 L42 95 L40 31 Z"
-                  fill="rgba(0,0,0,0.1)"
-                />
-                <path
-                  d="M22 34 Q12 44 10 65 L19 67 Q22 50 28 44 Z"
-                  fill="rgba(200,170,120,0.65)"
-                />
-                <path
-                  d="M58 34 Q68 44 70 65 L61 67 Q58 50 52 44 Z"
-                  fill="rgba(200,170,120,0.65)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -571,35 +316,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 3 ── -->
         <div class="product-card" data-cat="vay">
           <div class="product-img-wrap" style="background: #c5bcb5">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M26 32 Q35 28 40 29 Q45 28 54 32 L52 62 L28 62 Z"
-                  fill="rgba(180,160,140,0.5)"
-                />
-                <path
-                  d="M28 62 Q20 140 40 138 Q60 140 52 62 Z"
-                  fill="rgba(80,60,40,0.25)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -608,51 +327,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 4 ── -->
         <div class="product-card" data-cat="quan">
           <div class="product-img-wrap" style="background: #bfb8b0">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <rect
-                  x="26"
-                  y="32"
-                  width="28"
-                  height="40"
-                  rx="2"
-                  fill="rgba(200,185,160,0.5)"
-                />
-                <rect
-                  x="26"
-                  y="70"
-                  width="13"
-                  height="60"
-                  rx="2"
-                  fill="rgba(200,185,160,0.55)"
-                />
-                <rect
-                  x="41"
-                  y="70"
-                  width="13"
-                  height="60"
-                  rx="2"
-                  fill="rgba(200,185,160,0.55)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -661,39 +338,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 5 ── -->
         <div class="product-card" data-cat="ao">
           <div class="product-img-wrap" style="background: #d0c4ba">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M22 34 Q35 30 40 31 Q45 30 58 34 L60 90 L20 90 Z"
-                  fill="rgba(220,190,160,0.65)"
-                />
-                <path
-                  d="M22 34 Q12 44 10 65 L19 67 Q22 50 28 44 Z"
-                  fill="rgba(220,190,160,0.6)"
-                />
-                <path
-                  d="M58 34 Q68 44 70 65 L61 67 Q58 50 52 44 Z"
-                  fill="rgba(220,190,160,0.6)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -702,39 +349,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 6 ── -->
         <div class="product-card" data-cat="chanvay">
           <div class="product-img-wrap" style="background: #c8c0b5">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <rect
-                  x="30"
-                  y="30"
-                  width="20"
-                  height="12"
-                  rx="2"
-                  fill="rgba(180,160,130,0.5)"
-                />
-                <path
-                  d="M28 42 Q25 140 40 138 Q55 140 52 42 Z"
-                  fill="rgba(100,80,60,0.3)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -743,39 +360,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 7 ── -->
         <div class="product-card" data-cat="bo">
           <div class="product-img-wrap" style="background: #b8b0a8">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M24 34 Q35 30 40 31 Q45 30 56 34 L54 72 L26 72 Z"
-                  fill="rgba(160,140,120,0.6)"
-                />
-                <rect
-                  x="24"
-                  y="70"
-                  width="32"
-                  height="58"
-                  rx="2"
-                  fill="rgba(160,140,120,0.55)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -784,40 +371,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 8 ── -->
         <div class="product-card" data-cat="blazer">
           <div class="product-img-wrap" style="background: #cac0b8">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M22 34 Q35 30 40 31 Q45 30 58 34 L62 95 L18 95 Z"
-                  fill="rgba(80,60,40,0.4)"
-                />
-                <path d="M40 31 L38 95 L42 95 Z" fill="rgba(0,0,0,0.15)" />
-                <path
-                  d="M22 34 Q12 44 10 65 L19 67 Q22 50 28 44 Z"
-                  fill="rgba(80,60,40,0.35)"
-                />
-                <path
-                  d="M58 34 Q68 44 70 65 L61 67 Q58 50 52 44 Z"
-                  fill="rgba(80,60,40,0.35)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -826,35 +382,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 9 ── -->
         <div class="product-card" data-cat="vay">
           <div class="product-img-wrap" style="background: #d0c8c0">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M26 32 Q38 28 40 29 Q42 28 54 32 L52 60 L28 60 Z"
-                  fill="rgba(200,180,160,0.5)"
-                />
-                <path
-                  d="M24 60 Q15 100 12 138 L68 138 Q65 100 56 60 Z"
-                  fill="rgba(160,130,100,0.3)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -863,39 +393,9 @@
           </div>
         </div>
 
+        <!-- ── Grid Card 10 ── -->
         <div class="product-card" data-cat="ao">
           <div class="product-img-wrap" style="background: #bcb5ae">
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="80" height="140" viewBox="0 0 80 140" fill="none">
-                <ellipse
-                  cx="40"
-                  cy="18"
-                  rx="11"
-                  ry="13"
-                  fill="rgba(255,255,255,0.2)"
-                />
-                <path
-                  d="M22 34 Q35 30 40 31 Q45 30 58 34 L58 85 L22 85 Z"
-                  fill="rgba(80,100,120,0.45)"
-                />
-                <path
-                  d="M22 34 Q12 44 10 65 L19 67 Q22 50 28 44 Z"
-                  fill="rgba(80,100,120,0.4)"
-                />
-                <path
-                  d="M58 34 Q68 44 70 65 L61 67 Q58 50 52 44 Z"
-                  fill="rgba(80,100,120,0.4)"
-                />
-              </svg>
-            </div>
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
@@ -904,55 +404,62 @@
           </div>
         </div>
       </div>
+      <!-- /products-grid -->
     </section>
 
-    <!-- ===== FLOAT BUTTONS ===== -->
+    <!-- ================================================
+       FLOATING CONTACT BUTTONS
+       Thay href="#" bằng link thực tế
+       ================================================ -->
     <div class="float-btns">
-      <div class="float-btn phone" title="Gọi điện">
+      <a href="tel:+84xxxxxxxxx" class="float-btn phone" title="Gọi điện">
         <svg viewBox="0 0 24 24">
           <path
             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.06-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
           />
         </svg>
-      </div>
-      <div class="float-btn fb" title="Facebook">
+      </a>
+      <a
+        href="https://m.me/hagoo"
+        class="float-btn messenger"
+        title="Messenger"
+      >
         <svg viewBox="0 0 24 24">
           <path
             d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
           />
         </svg>
-      </div>
-      <div
-        class="float-btn zalo"
-        title="Zalo"
-        style="background: white; border: 2px solid #0068ff"
+      </a>
+      <a href="https://zalo.me/hagoo" class="float-btn zalo" title="Zalo"
+        >Zalo</a
       >
-        <span
-          style="
-            font-family: var(--font-body);
-            font-size: 10px;
-            font-weight: 700;
-            color: #0068ff;
-            letter-spacing: 0;
-          "
-          >Zalo</span
-        >
-      </div>
     </div>
 
-    <!-- ===== SCROLL TO TOP ===== -->
+    <!-- ================================================
+       SCROLL TO TOP
+       ================================================ -->
     <button
       class="scroll-top"
       id="scrollTopBtn"
+      aria-label="Lên đầu trang"
       onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
     >
-      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
         <polyline points="18 15 12 9 6 15" />
       </svg>
     </button>
 
-    <!-- ===== MOBILE BOTTOM NAV ===== -->
-    <nav class="bottom-nav">
+    <!-- ================================================
+       BOTTOM NAVIGATION (mobile only)
+       ================================================ -->
+    <nav class="bottom-nav" aria-label="Menu chính">
       <a href="#" class="bnav-item active">
         <svg
           viewBox="0 0 24 24"
@@ -965,6 +472,7 @@
         </svg>
         <span>Trang chủ</span>
       </a>
+
       <a href="#" class="bnav-item">
         <svg
           viewBox="0 0 24 24"
@@ -978,7 +486,8 @@
         </svg>
         <span>Mới về</span>
       </a>
-      <a href="#" class="bnav-item" style="position: relative">
+
+      <a href="#" class="bnav-item">
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -989,11 +498,10 @@
           <line x1="3" y1="6" x2="21" y2="6" />
           <path d="M16 10a4 4 0 0 1-8 0" />
         </svg>
-        <span class="cart-badge" style="top: -4px; right: calc(50% - 18px)"
-          >0</span
-        >
+        <span class="bnav-badge">0</span>
         <span>Giỏ hàng</span>
       </a>
+
       <a href="#" class="bnav-item">
         <svg
           viewBox="0 0 24 24"
@@ -1006,6 +514,7 @@
         </svg>
         <span>Tài khoản</span>
       </a>
+
       <a href="#" class="bnav-item">
         <svg
           viewBox="0 0 24 24"
@@ -1021,39 +530,45 @@
       </a>
     </nav>
 
-    <div class="page-bottom-pad"></div>
+    <div class="page-end"></div>
 
+    <!-- ================================================
+       JAVASCRIPT
+       ================================================ -->
     <script>
-      // Scroll to top visibility
+      /* --- Scroll-to-top visibility --- */
       const scrollBtn = document.getElementById("scrollTopBtn");
       window.addEventListener("scroll", () => {
         scrollBtn.classList.toggle("visible", window.scrollY > 300);
       });
 
-      // Carousel scroll
-      function scrollCarousel(dir) {
-        const el = document.getElementById("banchay-carousel");
+      /* --- Carousel scroll (desktop arrows) --- */
+      function scrollCarousel(id, dir) {
+        const el = document.getElementById(id);
         const cardW = el.querySelector(".product-card").offsetWidth + 16;
         el.scrollBy({ left: dir * cardW * 2, behavior: "smooth" });
       }
 
-      // Category filter
+      /* --- Category filter --- */
       function filterCat(btn, cat) {
+        /* Update active tab */
         document
           .querySelectorAll(".cat-tab")
           .forEach((t) => t.classList.remove("active"));
         btn.classList.add("active");
 
-        const cards = document.querySelectorAll("#main-grid .product-card");
-        cards.forEach((card) => {
-          const show = cat === "all" || card.dataset.cat === cat;
-          card.style.display = show ? "" : "none";
-        });
+        /* Show / hide cards */
+        document
+          .querySelectorAll("#main-grid .product-card")
+          .forEach((card) => {
+            const match = cat === "all" || card.dataset.cat === cat;
+            card.style.display = match ? "" : "none";
+          });
       }
 
-      // Bottom nav active state
+      /* --- Bottom nav active state --- */
       document.querySelectorAll(".bnav-item").forEach((item) => {
-        item.addEventListener("click", function (e) {
+        item.addEventListener("click", function () {
           document
             .querySelectorAll(".bnav-item")
             .forEach((i) => i.classList.remove("active"));
