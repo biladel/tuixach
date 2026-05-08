@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- ================================================
-       MOBILE NAVIGATION (visible < 900px)
+       MOBILE NAVIGATION  (ẩn trên desktop)
        ================================================ -->
     <nav class="nav-mobile">
       <a href="#" class="mobile-logo">
@@ -52,7 +52,7 @@
     </nav>
 
     <!-- ================================================
-       DESKTOP NAVIGATION (visible ≥ 900px)
+       DESKTOP NAVIGATION  (ẩn trên mobile)
        ================================================ -->
     <nav class="nav-desktop">
       <a href="#" class="desktop-logo">
@@ -122,15 +122,12 @@
 
     <!-- ================================================
        HERO BANNER
-       Thay src="..." bằng đường dẫn ảnh thực tế của bạn
+       Khi có ảnh thật:
+         - Xóa <div class="hero-placeholder"></div>
+         - Thêm <img class="hero-img" src="images/banner.jpg" alt="HAGOO Banner">
        ================================================ -->
     <section class="hero">
-      <!--
-      Nếu có ảnh thật, xóa div.hero-placeholder và dùng thẻ img:
-      <img class="hero-img" src="images/banner.jpg" alt="HAGOO City Layers">
-    -->
       <div class="hero-placeholder"></div>
-
       <div class="hero-overlay">
         <span class="hero-brand">HAGOO</span>
         <h1 class="hero-title">TIMELESS<br />COURAGE</h1>
@@ -141,15 +138,14 @@
     <!-- ================================================
        SẢN PHẨM BÁN CHẠY
        ================================================ -->
-    <section>
-      <div class="section-title fade-up">
+    <section class="section-banchay">
+      <div class="section-title">
         <h2>Sản Phẩm Bán Chạy</h2>
       </div>
 
       <div class="carousel-wrap">
-        <!-- Left arrow (desktop only) -->
         <button
-          class="carousel-arrow left"
+          class="carousel-arrow carousel-arrow--left"
           onclick="scrollCarousel('banchay', -1)"
           aria-label="Trước"
         >
@@ -166,70 +162,68 @@
         </button>
 
         <div class="products-scroll" id="banchay">
-          <!-- ── Card 1 ── -->
           <div class="product-card">
             <div class="product-img-wrap">
-              <!--
-              Thay bằng:
-              <img src="images/sp1.jpg" alt="Áo khoác kaki ngắn đai eo">
-            -->
+              <!-- <img src="images/sp1.jpg" alt="Áo khoác kaki ngắn đai eo"> -->
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
-              <div class="name">Áo khoác kaki ngắn đai eo...</div>
-              <div class="price">1.150.000 đ</div>
+              <p class="name">Áo khoác kaki ngắn đai eo...</p>
+              <p class="price">1.150.000 đ</p>
             </div>
           </div>
 
-          <!-- ── Card 2 ── -->
           <div class="product-card">
-            <div class="product-img-wrap" style="background: #d4c9bc">
+            <div class="product-img-wrap">
+              <!-- <img src="images/sp2.jpg" alt="Chân váy kaki xếp ly nép chéo"> -->
+              <img src="img/anh (3).jpg" alt="" />
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
-              <div class="name">Chân váy kaki xếp ly nép chéo...</div>
-              <div class="price">630.000 đ</div>
+              <p class="name">Chân váy kaki xếp ly nép chéo...</p>
+              <p class="price">630.000 đ</p>
             </div>
           </div>
 
-          <!-- ── Card 3 ── -->
           <div class="product-card">
-            <div class="product-img-wrap" style="background: #c0b0a5">
+            <div class="product-img-wrap">
+              <img src="/img/anh (2).jpg" alt="anh" />
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
-              <div class="name">Áo thun dài tay cổ lệch khuy...</div>
-              <div class="price">490.000 đ</div>
+              <p class="name">Áo thun dài tay cổ lệch khuy...</p>
+              <p class="price">490.000 đ</p>
             </div>
           </div>
 
-          <!-- ── Card 4 ── -->
           <div class="product-card">
-            <div class="product-img-wrap" style="background: #c8bdb2">
+            <div class="product-img-wrap">
+              <!-- <img src="images/sp4.jpg" alt="Quần baggy cạp liền"> -->
+              <img src="img/anh (5).jpg" alt="anh" />
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
-              <div class="name">Quần baggy cạp liền</div>
-              <div class="price">550.000 đ</div>
+              <p class="name">Quần baggy cạp liền</p>
+              <p class="price">550.000 đ</p>
             </div>
           </div>
 
-          <!-- ── Card 5 ── -->
           <div class="product-card">
-            <div class="product-img-wrap" style="background: #cfc5ba">
+            <div class="product-img-wrap">
+              <!-- <img src="images/sp5.jpg" alt="Quần denim 2 ly điều chỉnh"> -->
+              <img src="/img/anh (1).jpg" alt="anh" />
               <span class="product-watermark">HAGOO</span>
             </div>
             <div class="product-info">
-              <div class="name">Quần denim 2 ly điều chỉnh...</div>
-              <div class="price">680.000 đ</div>
+              <p class="name">Quần denim 2 ly điều chỉnh...</p>
+              <p class="price">680.000 đ</p>
             </div>
           </div>
         </div>
         <!-- /products-scroll -->
 
-        <!-- Right arrow (desktop only) -->
         <button
-          class="carousel-arrow right"
+          class="carousel-arrow carousel-arrow--right"
           onclick="scrollCarousel('banchay', 1)"
           aria-label="Tiếp"
         >
@@ -249,17 +243,16 @@
     </section>
 
     <!-- ================================================
-       MUA GÌ HÔM NAY — TABS + GRID
+       MUA GÌ HÔM NAY
        ================================================ -->
-    <section class="cat-tabs-section">
-      <div class="section-title fade-up">
+    <section class="section-muagi">
+      <div class="section-title">
         <h2>Mua Gì Hôm Nay?</h2>
       </div>
 
-      <!-- Category filter tabs -->
       <div class="cat-tabs" role="tablist">
         <button
-          class="cat-tab active"
+          class="cat-tab cat-tab--active"
           role="tab"
           onclick="filterCat(this, 'all')"
         >
@@ -288,119 +281,114 @@
         </button>
       </div>
 
-      <!-- Products grid -->
       <div class="products-grid" id="main-grid">
-        <!-- ── Grid Card 1 ── -->
         <div class="product-card" data-cat="ao">
-          <div class="product-img-wrap" style="background: #b8c8c0">
-            <!--
-            Thay bằng:
-            <img src="images/sp6.jpg" alt="Áo sơ mi lụa">
-          -->
+          <div class="product-img-wrap">
+            <!-- <img src="images/g1.jpg" alt="Áo sơ mi lụa cổ V"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Áo sơ mi lụa cổ V...</div>
-            <div class="price">520.000 đ</div>
+            <p class="name">Áo sơ mi lụa cổ V...</p>
+            <p class="price">520.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 2 ── -->
         <div class="product-card" data-cat="blazer">
-          <div class="product-img-wrap" style="background: #d4c8b8">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g2.jpg" alt="Blazer linen dáng suông"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Blazer linen dáng suông...</div>
-            <div class="price">890.000 đ</div>
+            <p class="name">Blazer linen dáng suông...</p>
+            <p class="price">890.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 3 ── -->
         <div class="product-card" data-cat="vay">
-          <div class="product-img-wrap" style="background: #c5bcb5">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g3.jpg" alt="Váy midi cổ điển"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Váy midi cổ điển...</div>
-            <div class="price">720.000 đ</div>
+            <p class="name">Váy midi cổ điển...</p>
+            <p class="price">720.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 4 ── -->
         <div class="product-card" data-cat="quan">
-          <div class="product-img-wrap" style="background: #bfb8b0">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g4.jpg" alt="Quần ống rộng lưng thun"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Quần ống rộng lưng thun...</div>
-            <div class="price">480.000 đ</div>
+            <p class="name">Quần ống rộng lưng thun...</p>
+            <p class="price">480.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 5 ── -->
         <div class="product-card" data-cat="ao">
-          <div class="product-img-wrap" style="background: #d0c4ba">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g5.jpg" alt="Áo croptop đan dây"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Áo croptop đan dây...</div>
-            <div class="price">380.000 đ</div>
+            <p class="name">Áo croptop đan dây...</p>
+            <p class="price">380.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 6 ── -->
         <div class="product-card" data-cat="chanvay">
-          <div class="product-img-wrap" style="background: #c8c0b5">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g6.jpg" alt="Chân váy A-line kẻ caro"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Chân váy A-line kẻ caro...</div>
-            <div class="price">560.000 đ</div>
+            <p class="name">Chân váy A-line kẻ caro...</p>
+            <p class="price">560.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 7 ── -->
         <div class="product-card" data-cat="bo">
-          <div class="product-img-wrap" style="background: #b8b0a8">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g7.jpg" alt="Set áo quần linen"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Set áo + quần linen...</div>
-            <div class="price">1.050.000 đ</div>
+            <p class="name">Set áo + quần linen...</p>
+            <p class="price">1.050.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 8 ── -->
         <div class="product-card" data-cat="blazer">
-          <div class="product-img-wrap" style="background: #cac0b8">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g8.jpg" alt="Blazer tweed dáng fitted"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Blazer tweed dáng fitted...</div>
-            <div class="price">1.250.000 đ</div>
+            <p class="name">Blazer tweed dáng fitted...</p>
+            <p class="price">1.250.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 9 ── -->
         <div class="product-card" data-cat="vay">
-          <div class="product-img-wrap" style="background: #d0c8c0">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g9.jpg" alt="Váy wrap lụa tự nhiên"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Váy wrap lụa tự nhiên...</div>
-            <div class="price">850.000 đ</div>
+            <p class="name">Váy wrap lụa tự nhiên...</p>
+            <p class="price">850.000 đ</p>
           </div>
         </div>
 
-        <!-- ── Grid Card 10 ── -->
         <div class="product-card" data-cat="ao">
-          <div class="product-img-wrap" style="background: #bcb5ae">
+          <div class="product-img-wrap">
+            <!-- <img src="images/g10.jpg" alt="Áo len cổ thuyền"> -->
             <span class="product-watermark">HAGOO</span>
           </div>
           <div class="product-info">
-            <div class="name">Áo len cổ thuyền...</div>
-            <div class="price">440.000 đ</div>
+            <p class="name">Áo len cổ thuyền...</p>
+            <p class="price">440.000 đ</p>
           </div>
         </div>
       </div>
@@ -409,10 +397,13 @@
 
     <!-- ================================================
        FLOATING CONTACT BUTTONS
-       Thay href="#" bằng link thực tế
        ================================================ -->
     <div class="float-btns">
-      <a href="tel:+84xxxxxxxxx" class="float-btn phone" title="Gọi điện">
+      <a
+        href="tel:+84xxxxxxxxx"
+        class="float-btn float-btn--phone"
+        title="Gọi điện"
+      >
         <svg viewBox="0 0 24 24">
           <path
             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.06-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
@@ -421,7 +412,7 @@
       </a>
       <a
         href="https://m.me/hagoo"
-        class="float-btn messenger"
+        class="float-btn float-btn--messenger"
         title="Messenger"
       >
         <svg viewBox="0 0 24 24">
@@ -430,7 +421,10 @@
           />
         </svg>
       </a>
-      <a href="https://zalo.me/hagoo" class="float-btn zalo" title="Zalo"
+      <a
+        href="https://zalo.me/hagoo"
+        class="float-btn float-btn--zalo"
+        title="Zalo"
         >Zalo</a
       >
     </div>
@@ -457,10 +451,10 @@
     </button>
 
     <!-- ================================================
-       BOTTOM NAVIGATION (mobile only)
+       BOTTOM NAVIGATION  (ẩn trên desktop)
        ================================================ -->
     <nav class="bottom-nav" aria-label="Menu chính">
-      <a href="#" class="bnav-item active">
+      <a href="#" class="bnav-item bnav-item--active">
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -536,43 +530,40 @@
        JAVASCRIPT
        ================================================ -->
     <script>
-      /* --- Scroll-to-top visibility --- */
+      /* Scroll-to-top visibility */
       const scrollBtn = document.getElementById("scrollTopBtn");
       window.addEventListener("scroll", () => {
-        scrollBtn.classList.toggle("visible", window.scrollY > 300);
+        scrollBtn.classList.toggle("scroll-top--visible", window.scrollY > 300);
       });
 
-      /* --- Carousel scroll (desktop arrows) --- */
+      /* Carousel arrows */
       function scrollCarousel(id, dir) {
         const el = document.getElementById(id);
-        const cardW = el.querySelector(".product-card").offsetWidth + 16;
+        const cardW = el.querySelector(".product-card").offsetWidth + 10;
         el.scrollBy({ left: dir * cardW * 2, behavior: "smooth" });
       }
 
-      /* --- Category filter --- */
+      /* Category filter */
       function filterCat(btn, cat) {
-        /* Update active tab */
         document
           .querySelectorAll(".cat-tab")
-          .forEach((t) => t.classList.remove("active"));
-        btn.classList.add("active");
-
-        /* Show / hide cards */
+          .forEach((t) => t.classList.remove("cat-tab--active"));
+        btn.classList.add("cat-tab--active");
         document
           .querySelectorAll("#main-grid .product-card")
           .forEach((card) => {
-            const match = cat === "all" || card.dataset.cat === cat;
-            card.style.display = match ? "" : "none";
+            card.style.display =
+              cat === "all" || card.dataset.cat === cat ? "" : "none";
           });
       }
 
-      /* --- Bottom nav active state --- */
+      /* Bottom nav active state */
       document.querySelectorAll(".bnav-item").forEach((item) => {
         item.addEventListener("click", function () {
           document
             .querySelectorAll(".bnav-item")
-            .forEach((i) => i.classList.remove("active"));
-          this.classList.add("active");
+            .forEach((i) => i.classList.remove("bnav-item--active"));
+          this.classList.add("bnav-item--active");
         });
       });
     </script>
